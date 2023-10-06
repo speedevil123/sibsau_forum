@@ -1,0 +1,42 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using sib_love_site.Areas.Identity.Data;
+@model IEnumerable<ApplicationUser>
+
+        <h3>Список пользователей</h3>
+
+<table class="table">
+    <thread>
+        <tr>
+            <th>
+                Username
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Hashed Password
+            </th>
+        </tr>
+    </thread>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.UserName
+                </td>
+                <td>
+                    @item.Email
+                </td>
+                <td>
+                    @item.PasswordHash
+                </td>
+                <td>
+                    <form asp-action ="DeleteUser" method="post" asp-route-id="@item.Id">
+                        <button type="submit" class="btn btn-danger">Удалить</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

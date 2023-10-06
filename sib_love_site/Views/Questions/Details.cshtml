@@ -1,0 +1,74 @@
+﻿@model sib_love_site.Models.Question
+@using Microsoft.AspNetCore.Identity
+@using sib_love_site.Areas.Identity.Data;
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    bool isCurrentUserAuthor = false;
+
+    if (SignInManager.IsSignedIn(User))
+    {
+        var currentUserId = SignInManager.UserManager.GetUserId(User);
+        var authorId = Model.User.Id;
+
+        isCurrentUserAuthor = (currentUserId == authorId);
+    }
+}
+
+<div class="details_true">
+    <h3>@Model.Title</h3>
+        <p>@Model.Description</p>
+        <div class="author_email">
+            <p class="author_details">Автор: @Model.User.FirstName @Model.User.LastName</p>
+            <p>Email: @Model.User.UserName</p>
+        </div>
+</div>
+<div class="all_answers_list">
+    <div class="all_answers_dv">
+        <h4>Все ответы: </h4>
+    </div>
+        @foreach(var answer in Model.Answers)
+        {
+            <p>@answer.Content - @answer.User.FirstName @answer.User.LastName</p>
+        }
+</div>
+
+<form asp-action="AddAnswer">
+    <div class="form-group">
+        <textarea input name="Content" class="form-control" rows="1"></textarea>
+    </div>
+    <div class="form-group">
+        <input type="hidden" name="ApplicationUserId" class="form-control" value="@UserManager.GetUserId(User)"/>
+    </div>
+    <div class="form-group">
+        <input type="hidden" name="QuestionId" class="form-control" value="@Model.Id" />
+    </div>
+    <div class="submit_edit_btns mt-2">
+        <div class="form-group">
+            <div class="d-inline-block mr-2">
+                <input type="submit" class="btn btn-info" value="Отправить" />
+            </div>
+            @if (isCurrentUserAuthor)
+            {   
+                <div class="d-inline-block">
+                    <a asp-action="Edit" class="btn btn-info" asp-route-id="@Model.Id">Редактировать</a>
+                </div>
+            }
+            @if (isCurrentUserAuthor)
+            {
+                <div class="d-inline-block">
+                    <a asp-action="Delete" class="btn btn-info" asp-route-id="@Model.Id">Удалить</a>
+                </div>
+            }
+        </div>
+    </div>
+</form>
+
+<a asp-action="Index">Назад</a>

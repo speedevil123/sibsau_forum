@@ -1,0 +1,21 @@
+﻿@model IEnumerable<sib_love_site.Models.Question>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Задайте любой интересующий вас вопрос!</h1>
+
+<p class="create_button">
+    <a asp-action="Create" class="btn btn-info">Создать новое обсуждение</a>
+</p>
+@foreach (var item in Model)
+{
+    <div class="details_topic">
+        <h4 class="details_header">@item.Title</h4>
+        <p>@item.Description</p>
+        <p>Автор: @item.User.FirstName @item.User.LastName || Всего ответов: @item.Answers.Count</p>
+        <a asp-action="Details" class="btn btn-info" asp-route-id="@item.Id">Детали</a>
+    </div>
+}

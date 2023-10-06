@@ -1,0 +1,321 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.create_button {
+    margin: 20px 0px 20px 0px;
+}
+
+.Rules h2 {
+    font-size: 20px;
+    border-bottom: 1px solid;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+body {
+  margin-bottom: 60px;
+  font-family:Roboto, sans-serif;
+}
+
+.navbar {
+    background-color: #FF9CD6;
+}
+
+.navbar-light navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: white;
+}
+
+
+.navbar-light .navbar-brand {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.btn-pink {
+    background-color: pink;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.edit {
+    margin-top: 2px;
+}
+
+.all_answers_list {
+    border: 1px solid black;
+    padding: 10px;
+    margin-top:30px;
+    margin-bottom: 20px;
+}
+
+.all_answers_dv {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    display:inline-block;
+}
+
+.all_answers_list p {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.details_true h3 {
+    display: inline-block;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px; /* ¬ы можете настроить отступ снизу по своему усмотрению */
+    margin-bottom: 20px; /* ¬ы можете настроить отступ снизу по своему усмотрению */
+}
+
+/* —тили дл€ обрамлени€ границами остального содержимого */
+.details_true {
+    border: 1px solid black;
+    padding: 10px; /* ¬ы можете настроить отступы по своему усмотрению */ /* ¬ы можете настроить отступ снизу по своему усмотрению */
+}
+
+/* —тили дл€ автора и электронной почты */
+.author_email p {
+    margin-bottom: 0px; /* ¬ы можете настроить отступ снизу по своему усмотрению */
+}
+
+.details_topic {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.header_list_of_questions {
+    margin: 20px 0px 20px 0px;
+}
+
+.btn-pink:hover {
+    background-color: lightpink;
+    color: dodgerblue;
+}
+
+.nav-link {
+    font-size: 20px;
+}
+
+.h1, h1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.login_header {
+    text-align: center;
+}
+
+.register_header {
+    text-align: center;
+}
+
+.story_of_the_project_topic {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.imgcontainer {
+    float: left;
+    margin-left: 10px;
+}
+
+.avatar {
+    height: 50px;
+}
+
+.navbar-brand {
+    margin-left: 20px;
+}
+
+.start_meeting_button {
+    justify-content: center;
+    margin: 250px 300px 0px 300px;
+}
+
+.start_meeting_button a {
+    font-size: 45px;
+    border-radius: 100px;
+    display: block;
+}
+
+.display-4 {
+    margin-top: 40px;
+}
+
+.footer {
+    background-color: #FAFAFA;
+}
+
+
+.login {
+    background-color: #96D9EB;
+    border-color: #96D9EB;
+}
+
+.btn:hover {
+}
+
+.login {
+    margin-top: 30px;
+}
+
+.btn {
+    color: white;
+}
+
+.create_acc {
+    background-color: #96D9EB;
+    border-color: #96D9EB;
+}
+
+.container_about_us {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container_about_us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#registerSubmit {
+    background-color: #FF9CD6;
+    border-color: #96D9EB;
+}
+
+.dop_btns_login {
+    margin-top: 20px;
+}
+
+#login-submit {
+    background-color: #FF9CD6;
+    border-color: #96D9EB;
+}
+
+.row_about_us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.col-md-6 {
+    flex-basis: 50%;
+}
+
+.sibsauimg {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+/*tab navigation*/
+.login-logout-card .card-header {
+    padding: 0px 0px 12px 0px;
+}
+
+.login-logout-card ul.nav-tabs {
+    margin: 0px 0px -12px 0px;
+}
+
+.login-logout-card li.nav-item {
+    width: 50%;
+}
+
+.login-logout-card a.nav-link {
+    font-size: 1rem;
+    color: #495057;
+    text-align: center;
+    padding: 1rem;
+}
+
+.login-logout-card .card-body {
+    padding: 10px 20px;
+}
+
+/* Media query дл€ устройств с шириной экрана до 768px */
+@media (max-width: 768px) {
+    .start_meeting_button {
+        margin: 250px 100px 0px 100px;
+    }
+
+        .start_meeting_button a {
+            font-size: 30px;
+            border-radius: 50px;
+        }
+}
+
+/* Media query дл€ устройств с шириной экрана от 768px до 1200px */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .start_meeting_button {
+        margin: 250px 150px 0px 150px;
+    }
+
+        .start_meeting_button a {
+            font-size: 35px;
+            border-radius: 100px;
+        }
+}
+
+/* Media query дл€ устройств с шириной экрана до 480px */
+@media (max-width: 480px) {
+    .start_meeting_button {
+        margin: 100px 50px 0px 50px;
+    }
+
+        .start_meeting_button a {
+            font-size: 20px;
+            border-radius: 30px;
+        }
+}
+
+/* Media query дл€ устройств с шириной экрана до 320px */
+@media (max-width: 320px) {
+    .start_meeting_button {
+        margin: 50px 20px 0px 20px;
+    }
+
+        .start_meeting_button a {
+            font-size: 16px;
+            border-radius: 20px;
+        }
+}
+
+@media (max-width: 768px) {
+    .container_about_us {
+        flex-direction: column;
+    }
+
+    .col-md-6 {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .sibsauimg {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}

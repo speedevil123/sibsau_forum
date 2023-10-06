@@ -1,0 +1,16 @@
+﻿@model IEnumerable<sib_love_site.Models.Question>
+
+<h3 class="header_list_of_questions">Список вопросов</h3>
+
+@foreach (var item in Model)
+{
+    <div class="details_topic">
+
+    <h4>@item.Title</h4>
+    <p>@item.Description</p>
+
+    <form asp-action ="DeleteQuestion" method="post" asp-route-id ="@item.Id">
+        <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
+    </div>
+}
