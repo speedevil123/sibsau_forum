@@ -118,12 +118,55 @@ body {
     text-align: center;
 }
 
+#profile {
+    /*color: #5bc0de;*/
+    color: #FF9CD6;
+}
+
+#email {
+    color: #FF9CD6
+}
+
+#change-password {
+    color: #FF9CD6
+}
+
+#two-factor {
+    color: #FF9CD6
+}
+
+#personal-data {
+    color: #FF9CD6
+}
+
 .login_header {
     text-align: center;
 }
 
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #31d2f2;
+    color: white!important;
+}
+
 .register_header {
     text-align: center;
+}
+
+.dropdown-item.active {
+    background-color: #31d2f2;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background-color: #31d2f2; /* измените на нужный вам цвет */
+}
+
+.dropdown-item active{
+    background-color: #31d2f2;
+}
+
+.download_btn {
+    margin-bottom: 5px;
 }
 
 .story_of_the_project_topic {
@@ -148,6 +191,7 @@ body {
     justify-content: center;
     margin: 250px 300px 0px 300px;
 }
+
 
 .start_meeting_button a {
     font-size: 45px;
