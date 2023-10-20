@@ -26,9 +26,6 @@ namespace sib_love_site.Controllers
         {
             var applicationDbContext = _context.Questions.Include(q => q.User).Include(a => a.Answers);
             return View(await applicationDbContext.ToListAsync());
-              //return _context.Questions != null ? 
-              //            View(await _context.Questions.ToListAsync()) :
-              //            Problem("Entity set 'AuthDbContext.Questions'  is null.");
         }
 
         // GET: Questions/Details/5
@@ -60,8 +57,6 @@ namespace sib_love_site.Controllers
         }
 
         // POST: Questions/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [Authorize]
         [ValidateAntiForgeryToken]
@@ -113,8 +108,6 @@ namespace sib_love_site.Controllers
         }
 
         // POST: Questions/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [Authorize]
         [ValidateAntiForgeryToken]
