@@ -2,30 +2,6 @@
   "Question": [
     {
       "Id": 0,
-      "Title": "Тестовая тема которая пойдет в файл",
-      "Description": "невер гона гив ю ап",
-      "ApplicationUserId": "7b9fc0d1-58e5-49d8-b4dc-e46c86377fe6",
-      "User": null,
-      "Answers": null
-    },
-    {
-      "Id": 0,
-      "Title": "fweefwf",
-      "Description": "fweefw",
-      "ApplicationUserId": "7b9fc0d1-58e5-49d8-b4dc-e46c86377fe6",
-      "User": null,
-      "Answers": null
-    },
-    {
-      "Id": 0,
-      "Title": "sasha",
-      "Description": "продам женщину",
-      "ApplicationUserId": "7b9fc0d1-58e5-49d8-b4dc-e46c86377fe6",
-      "User": null,
-      "Answers": null
-    },
-    {
-      "Id": 0,
       "Title": "Рецепт пиццы",
       "Description": "Тесто: Смешайте муку, дрожжи и соль. Затем добавьте яйцо.Влейте водуи и масло. Хорошенько все перемешайте. Тесто должно отходить от стенок миски. Положите тесто на стол, посыпанный мукой и вымешивать. Посыпьте противень мукой. Раскатайте на противне шар из теста. Поднимите края теста вверх, согните, чтобы получился бортик высотой 2—3 см. Начинка:Майонез и кетчуп размазываем по всему тесту!Кладем колбасу,грибы,перец,посыпаем специями и сверху кладем сыр. В разогретую духовку до 180*С ставим пиццу на 20-30 минут.",
       "ApplicationUserId": "7b9fc0d1-58e5-49d8-b4dc-e46c86377fe6",
@@ -39,17 +15,25 @@
       "ApplicationUserId": "e0e1d40c-7ebe-4e32-bc36-1f2c953c15d7",
       "User": null,
       "Answers": null
+    },
+    {
+      "Id": 0,
+      "Title": "Тестовое обсуждение",
+      "Description": "Какой - то текст",
+      "ApplicationUserId": "b11d6e01-9b69-48c1-97bc-978c05ccac10",
+      "User": null,
+      "Answers": null
+    },
+    {
+      "Id": 0,
+      "Title": "Тестовое обсуждение",
+      "Description": "Какой - то текст",
+      "ApplicationUserId": "b11d6e01-9b69-48c1-97bc-978c05ccac10",
+      "User": null,
+      "Answers": null
     }
   ],
   "Answer": [
-    {
-      "Id": 0,
-      "Content": "flwekfkwe",
-      "ApplicationUserId": "7b9fc0d1-58e5-49d8-b4dc-e46c86377fe6",
-      "User": null,
-      "QuestionId": 14,
-      "Question": null
-    },
     {
       "Id": 0,
       "Content": "Отличный рецепт! Попробовала дома, всей семье понравилось!",
@@ -57,28 +41,17 @@
       "User": null,
       "QuestionId": 1040,
       "Question": null
+    },
+    {
+      "Id": 0,
+      "Content": "Тестовый комментарий",
+      "ApplicationUserId": "e0e1d40c-7ebe-4e32-bc36-1f2c953c15d7",
+      "User": null,
+      "QuestionId": 1043,
+      "Question": null
     }
   ],
   "ApplicationUser": [
-    {
-      "FirstName": "Александра",
-      "LastName": "Семенюк",
-      "Id": "eab78644-a548-4a18-82bf-b6199a55e63d",
-      "UserName": "alexandra_semenyuk@mail.ru",
-      "NormalizedUserName": "ALEXANDRA_SEMENYUK@MAIL.RU",
-      "Email": "alexandra_semenyuk@mail.ru",
-      "NormalizedEmail": "ALEXANDRA_SEMENYUK@MAIL.RU",
-      "EmailConfirmed": false,
-      "PasswordHash": "AQAAAAIAAYagAAAAEFUqc/fsMnMDHFGbN+DenLDzTtnw78k3To6fEaM4JrYZbTc2JQqcOa/XCguR0VFABg==",
-      "SecurityStamp": "JIVI5QOU7JE4XQTRWYF42JDHNQ23ZFRV",
-      "ConcurrencyStamp": "f0e7dd97-971d-4de4-9cdf-313097d3ebd6",
-      "PhoneNumber": null,
-      "PhoneNumberConfirmed": false,
-      "TwoFactorEnabled": false,
-      "LockoutEnd": null,
-      "LockoutEnabled": true,
-      "AccessFailedCount": 0
-    },
     {
       "FirstName": "Александра",
       "LastName": "Семенюк",
@@ -91,6 +64,44 @@
       "PasswordHash": "AQAAAAIAAYagAAAAEAL1FY2vkKUFbtjWiGvsre4nkVPxdUFj2co34ZPRTYtDwJvcPbGAJ9WiQz7VGlrO8A==",
       "SecurityStamp": "3P4QFIIZ2FQ35QK5NF4WXJAHGHOQ5IAW",
       "ConcurrencyStamp": "be9df215-4aac-4051-a7e4-56eb829c8ead",
+      "PhoneNumber": null,
+      "PhoneNumberConfirmed": false,
+      "TwoFactorEnabled": false,
+      "LockoutEnd": null,
+      "LockoutEnabled": true,
+      "AccessFailedCount": 0
+    },
+    {
+      "FirstName": "Тестовый",
+      "LastName": "Аккаунт",
+      "Id": "94047981-d3ae-4144-b3d8-2be1a6daf726",
+      "UserName": "test_acc@mail.ru",
+      "NormalizedUserName": "TEST_ACC@MAIL.RU",
+      "Email": "test_acc@mail.ru",
+      "NormalizedEmail": "TEST_ACC@MAIL.RU",
+      "EmailConfirmed": false,
+      "PasswordHash": "AQAAAAIAAYagAAAAEKF/Xh4kj2/dRm3cBiAzbEpmAJKZcZKqb1kLorSpkML/8sIdTVABoplO2UJjTVRsXQ==",
+      "SecurityStamp": "UFQUARNCLGG22C2NURHSUYAJIISQCVZ2",
+      "ConcurrencyStamp": "2e01acf7-182d-4d7e-b398-f2aa9d5f5bf7",
+      "PhoneNumber": null,
+      "PhoneNumberConfirmed": false,
+      "TwoFactorEnabled": false,
+      "LockoutEnd": null,
+      "LockoutEnabled": true,
+      "AccessFailedCount": 0
+    },
+    {
+      "FirstName": "Тестовый",
+      "LastName": "Аккаунт2",
+      "Id": "b11d6e01-9b69-48c1-97bc-978c05ccac10",
+      "UserName": "test_acc2@mail.ru",
+      "NormalizedUserName": "TEST_ACC2@MAIL.RU",
+      "Email": "test_acc2@mail.ru",
+      "NormalizedEmail": "TEST_ACC2@MAIL.RU",
+      "EmailConfirmed": false,
+      "PasswordHash": "AQAAAAIAAYagAAAAEKwnYGtwLy+uczGBQ3tVhWRLcCUZMiytKDvCp+yTP4ZEA+eqc8Y0/NLpS7e+Afg6Bw==",
+      "SecurityStamp": "HDMOYZV4BRJOIGD37SLZR4F7EQY56SH5",
+      "ConcurrencyStamp": "c1ab35a1-5165-4dc7-9a64-a429b5049e24",
       "PhoneNumber": null,
       "PhoneNumberConfirmed": false,
       "TwoFactorEnabled": false,
