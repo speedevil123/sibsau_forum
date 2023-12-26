@@ -30,7 +30,7 @@ body {
 }
 
 .navbar {
-    background-color: #FF9CD6;
+    background-color: #f0a937;
 }
 
 .navbar-light navbar-brand:focus, .navbar-light .navbar-brand:hover {
@@ -120,23 +120,23 @@ body {
 
 #profile {
     /*color: #5bc0de;*/
-    color: #FF9CD6;
+    color: #f0a937;
 }
 
 #email {
-    color: #FF9CD6
+    color: #f0a937;
 }
 
 #change-password {
-    color: #FF9CD6
+    color: #f0a937;
 }
 
 #two-factor {
-    color: #FF9CD6
+    color: #f0a937;
 }
 
 #personal-data {
-    color: #FF9CD6
+    color: #f0a937;
 }
 
 .login_header {
@@ -180,7 +180,9 @@ body {
 }
 
 .avatar {
-    height: 50px;
+    max-height: 90px;
+    width: auto;
+    margin: -15px;
 }
 
 .navbar-brand {
@@ -243,7 +245,7 @@ body {
 }
 
 #registerSubmit {
-    background-color: #FF9CD6;
+    background-color: #f0a937;
     border-color: #96D9EB;
 }
 
@@ -252,7 +254,7 @@ body {
 }
 
 #login-submit {
-    background-color: #FF9CD6;
+    background-color: #f0a937;
     border-color: #96D9EB;
 }
 
@@ -270,7 +272,7 @@ body {
 
 .sibsauimg {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     height: auto;
     margin-left: 40px;
     margin-top: 30px;

@@ -56,6 +56,7 @@ namespace sib_love_site.Controllers
             {
                 context.Questions.Remove(question);
                 await context.SaveChangesAsync();
+
             }
             else
             {
